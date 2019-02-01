@@ -1,0 +1,92 @@
+body{
+    font-family: "Times New Roman";
+    font-size: 1.5em;
+}
+
+section {
+  padding: 30px;
+  border: 5px dotted red;
+}
+
+.allergy {
+    color: #ff5500;
+    text-transform: uppercase;
+}
+
+h1 {
+    text-transform: uppercase;
+}
+
+.burgerselection {
+    color: white;
+    background-color: black;
+}
+
+.wrapper {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 300px 300px 300px;
+  color: red;
+}
+
+.box a {
+  grid-column: 1;
+}
+
+.box b {
+  grid-column: 2;
+}
+
+.box c {
+  grid-column: 3;
+}
+
+.payment {
+
+}
+
+
+
+
+
+
+
+.header {
+
+  text-align: center;
+  position: relative;
+  color: white;
+}
+
+.centered {
+  position: absolute;
+  font-size: 6em;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+table {
+    width:70%;
+    margin-left:15%;
+    margin-right:15%;
+    text-align: center;
+}
+ul {
+  text-align: left;
+}
+
+button {
+  padding: 10px;
+  margin: 30px;
+  color: white;
+  background-color: red;
+  cursor: pointer;
+}
+button:hover{
+    background-color: green;
+}
+
+footer{
+  margin: 20px;
+}
