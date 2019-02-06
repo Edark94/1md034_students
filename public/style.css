@@ -13,7 +13,8 @@ section {
     text-transform: uppercase;
 }
 
-h1 {
+h1,h3 {
+    font-size: 1.5em;
     text-transform: uppercase;
 }
 
@@ -22,13 +23,20 @@ h1 {
     background-color: black;
 }
 
-.wrapper {
-  display: grid;
-  grid-gap: 20px;
-  grid-template-columns: 300px 300px 300px;
-  color: red;
+#pickBurger {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(var(--colNum), auto);
+    color: yellow;
+    overflow-x: scroll;
 }
 
+#burgerLabel {
+    text-align:center;
+    text-transform: uppercase;
+}
+
+/*
 .box a {
   grid-column: 1;
 }
@@ -39,7 +47,7 @@ h1 {
 
 .box c {
   grid-column: 3;
-}
+}*/
 
 .payment {
 
@@ -89,4 +97,14 @@ button:hover{
 
 footer{
   margin: 20px;
+}
+
+
+.keyimg{
+    animation: 3s spin infinite linear;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }

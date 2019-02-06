@@ -1,9 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <link rel="stylesheet" type="text/css" href="style.css">
         <title>Burger4cashdotcom</title>
         <meta charset="utf-8"/>
+        <script type="text/javascript" src="js/menu.js"></script>
+        <script src="js/js_script.js" defer></script>
+        <script src="https://vuejs.org/js/vue.js" defer></script>
+        <script src="js/vue_script.js" defer></script>
+        <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body>
       <main>
@@ -12,40 +16,10 @@
           <div class="centered">Burger4cashdotcom</div>
         </div>
         <section class="burgerselection">
-
-              <h2 style="font-size:40px;">pikc burger ok do itn ow</h2>
-              <p>picxk ur burgerokay lol </p>
-              <div class="wrapper">
-                <div class="box a">
-                    <h3>Catburger</h3>
-                    <img src="https://i.pinimg.com/originals/da/a9/dd/daa9dd93e27afabce7973a7c2a37c13d.jpg" alt="CatBurger" title="Ohwee Catburgler" width="300" height="300" />
-                    <ul>
-                      <li class="allergy">100% organic cat</li>
-                      <li>Much hair</li>
-                      <li>Very tasty</li>
-                    </ul>
-                </div>
-                <div class="box b">
-                    <h3>doggoburger</h3>
-                    <img src="http://www.freakingnews.com/pictures/9500/dog-burger--9969.jpg" alt="doggoburger" title="tasty v hotdog" width="300" height="300">
-                    <ul>
-                      <li class="allergy">100% organic dog</li>
-                      <li>Give treat for paw</li>
-                      <li>hottu dogu</li>
-                    </ul>
-                </div>
-                <div class="box c">
-                    <h3>hooOOmanburg</h3>
-                    <img src="https://c1.staticflickr.com/3/2398/2195825104_dd08ff307b.jpg" alt="hoomanBUrger" title="nomnom" width="300" height="300">
-                    <ul>
-                      <li class="allergy">is human XD</li>
-                      <li>is king of nburger</li>
-                      <li>lots of juoicy fat nom</li>
-                    </ul>
-                </div>
-              </div>
+            <h2 style="font-size:40px;">pikc burger ok do itn ow</h2>
+            <p>picxk ur burgerokay lol </p>
+            <div id="pickBurger"></div>
         </section>
-
           <!-- <section>
             <h2 style="font-size:40px;">owo burgetr info lol!</h2>
             <p> wat burger u want XD</p>
@@ -54,7 +28,7 @@
             <h2 style="font-size:40px;">fillinformplsxoxoXD!</h2>
             <p> info2pay4burgers... please fill in</p>
               <p>
-                <label for="name">Full name</label><br>
+                <label for="name" id="inputName">Full name</label><br>
                 <input type="text" id="name" name="fn" required="required" placeholder="First- and Last name">
               </p>
 
@@ -77,14 +51,14 @@
                   <option>CATS</option>
                 </select>
                 <form>
-                  <input type="radio" name="gender" value="male"> Male<br>
-                  <input type="radio" name="gender" value="female"> Female<br>
-                  <input type="radio" name="gender" value="other"> Other<br>
+                    <input type="radio" id="gender" name="gender" value="male"> Male<br>
+                    <input type="radio" id="gender" name="gender" value="female"> Female<br>
+                    <input type="radio" id="gender" name="gender" value="other"> Other<br>
                   <!--  <input type="submit" value="Submit"> -->
                 </form>
               </p>
             </section>
-            <button type="submit"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Yes_Check_Circle.svg/2000px-Yes_Check_Circle.svg.png "width="17" height="17"> Send Info</button>
+            <button type="submit" id="lastButton"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Yes_Check_Circle.svg/2000px-Yes_Check_Circle.svg.png "width="17" height="17"> Send Info</button>
       </main>
       <footer>&copy; belongs to me ooOOO</footer>
     </body>
